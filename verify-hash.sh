@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$#" -eq 1 ] && ([ $1 == "-h" ] || [ $1 == "--help" ]); then
-	echo "Usage: $0 <hash> <file> <given_key>"
+	echo "Usage: $0 <hash_algo> <file> <source_hash>"
 	echo "- hash: One of the 'sum' family, like [sha1, sha224, sha256, sha384, sha512, md5]."
 	echo "- file: The filename to compute the hash validity."
 	echo "- given_key: The hash key that should match the computed one."
