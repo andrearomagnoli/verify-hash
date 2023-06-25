@@ -50,7 +50,7 @@ fi
 
 # Test the verify-hash.sh with help command
 result=$(bash verify-hash.sh -h)
-if [[ $result = *"Usage: verify-hash.sh <hash> <file> <given_key>"* ]]; then
+if [[ $result = *"Usage: verify-hash.sh <hash_algo> <file> <source_hash>"* ]]; then
   echo -e "Help command test: ${GREEN}Passed${CLOSE}"
 else
   echo -e "Help command test: ${RED}Failed${CLOSE}"
