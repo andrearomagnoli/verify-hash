@@ -6,7 +6,7 @@ Very simple shell script to check if a downloaded file has been tampered.
 Download the file `verify-hash.sh` (or the whole repo) and run it:
 ```
 curl https://raw.githubusercontent.com/brootware/verify-hash.sh/master/verify-hash.sh > verify-hash.sh && chmod +x verify-hash.sh
-./verify-hash.sh <hash> <file> <given_key>
+./verify-hash.sh <hash_algo> <file> <source_hash>
 ```
 
 For example, with a downloaded file:
