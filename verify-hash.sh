@@ -25,7 +25,7 @@ echo "Computed hash: $sha_compute"
 echo "Given hash:    $sha_generate"
 
 if [ "$sha_compute" == "$sha_generate" ]; then
-	echo "${GREEN}OK${CLOSE}: Keys match correctly."
+	echo -e "${GREEN}OK${CLOSE}: Keys match correctly."
 else
-	echo "${GREEN}Failed${CLOSE}: Keys don't match."
+	echo -e "${RED}Failed${CLOSE}: Keys don't match."
 fi
