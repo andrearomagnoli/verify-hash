@@ -1,5 +1,9 @@
 #!/bin/bash
 
+RED='\e[31m'
+GREEN='\e[32m'
+CLOSE='\e[0m'
+
 if [ "$#" -eq 1 ] && ([ $1 == "-h" ] || [ $1 == "--help" ]); then
 	echo "Usage: $0 <hash_algo> <file> <source_hash>"
 	echo "- hash: One of the 'sum' family, like [sha1, sha224, sha256, sha384, sha512, md5]."
@@ -21,7 +25,7 @@ echo "Computed hash: $sha_compute"
 echo "Given hash:    $sha_generate"
 
 if [ "$sha_compute" == "$sha_generate" ]; then
-	echo "OK: Keys match correctly."
+	echo "${GREEN}OK${CLOSE}: Keys match correctly."
 else
-	echo "Failed: Keys don't match."
+	echo "${GREEN}Failed${CLOSE}: Keys don't match."
 fi
