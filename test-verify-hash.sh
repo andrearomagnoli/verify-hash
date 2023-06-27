@@ -1,10 +1,8 @@
 #!/bin/bash
 # Test the verify-hash.sh with valid parameters
-RED='\033[0;31m'
-GREEN='\033[2;32m'
-CLOSE='\033[m'
-NC='\033[0m' # No Color
-# echo -e "I ${RED}love${GREEN} Stack Overflow"
+RED='\e[31m'
+GREEN='\e[32m'
+CLOSE='\e[0m'
 
 result=$(bash verify-hash.sh md5 LICENSE 86d3f3a95c324c9479bd8986968f4327)
 if [[ $result = *"OK: Keys match correctly."* ]]; then
