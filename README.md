@@ -26,10 +26,10 @@ OK: Keys match correctly.
 ## If you want to add this script to path, you can run the below commands
 
 ```
-curl https://raw.githubusercontent.com/brootware/verify-hash.sh/master/verify-hash.sh > verify-hash && chmod +x verify-hash
-sudo mv verify-hash /bin/
+curl https://raw.githubusercontent.com/brootware/verify-hash.sh/master/verify-hash.sh > verifyhash && chmod +x verifyhash
+sudo mv verifyhash /bin/
 export PATH=$PATH:/bin
-verify-hash
+verifyhash
 ```
 
 ## Features
