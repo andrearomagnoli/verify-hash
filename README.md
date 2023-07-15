@@ -23,6 +23,15 @@ Given hash:    7a186a2a007b2dfd880571f7214a7d329c972510a460a8bdbef9f7f2a89101934
 OK: Keys match correctly.
 ```
 
+## If you want to add this script to path, you can run the below commands
+
+```
+curl https://raw.githubusercontent.com/brootware/verify-hash.sh/master/verify-hash.sh > verify-hash && chmod +x verify-hash
+sudo mv verify-hash /bin/
+export PATH=$PATH:/bin
+verify-hash
+```
+
 ## Features
 This supports all the algorithms of the form `*sum` in Linux. For example `sha512sum`, `md5sum`, so on and so forth.
 
