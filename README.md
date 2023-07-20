@@ -27,8 +27,8 @@ OK: Keys match correctly.
 
 ```
 curl https://raw.githubusercontent.com/brootware/verify-hash.sh/master/verify-hash.sh > verifyhash && chmod +x verifyhash
-sudo mv verifyhash /bin/
-export PATH=$PATH:/bin
+sudo mv verifyhash /opt/
+export PATH=$PATH:/opt
 verifyhash
 ```
 
