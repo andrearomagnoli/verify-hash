@@ -5,7 +5,8 @@ Very simple shell script to check if a downloaded file has been tampered.
 
 Download the file `verify-hash.sh` (or the whole repo) and run it:
 ```
-./verify-hash.sh <hash> <file> <given_key>
+curl https://raw.githubusercontent.com/brootware/verify-hash.sh/master/verify-hash.sh > verify-hash.sh && chmod +x verify-hash.sh
+./verify-hash.sh <hash_algo> <file> <source_hash>
 ```
 
 For example, with a downloaded file:
@@ -20,6 +21,15 @@ Once running, it will show you the following output:
 Computed hash: 7a186a2a007b2dfd880571f7214a7d329c972510a460a8bdbef9f7f2a891019343c020f74b496a61e5aa42bc9e9a79cc99defe5cb3bf8b6f49c07e01b259bc6b
 Given hash:    7a186a2a007b2dfd880571f7214a7d329c972510a460a8bdbef9f7f2a891019343c020f74b496a61e5aa42bc9e9a79cc99defe5cb3bf8b6f49c07e01b259bc6b
 OK: Keys match correctly.
+```
+
+## If you want to add this script to path, you can run the below commands
+
+```
+curl https://raw.githubusercontent.com/brootware/verify-hash.sh/master/verify-hash.sh > verifyhash && chmod +x verifyhash
+sudo mv verifyhash /opt/
+export PATH=$PATH:/opt
+verifyhash
 ```
 
 ## Features
