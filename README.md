@@ -1,7 +1,7 @@
 # Verify Hash
 
 ## Setup and first run
-Very simple shell script to check if a downloaded file has been tampered.
+Straightforward but useful shell script that checks if a downloaded file has been tampered.
 
 Download the file `verify-hash.sh` (or the whole repo) and run it:
 ```
